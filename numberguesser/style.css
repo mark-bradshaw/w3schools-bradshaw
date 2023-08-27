@@ -1,0 +1,43 @@
+html,
+body {
+    font-family: 'Arial';
+    font-size: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(113, 237, 187);
+    border-radius: 5px;
+    margin: 20px auto;
+    display: block;
+    font-size: 135%;
+}
+
+#startButton {
+    border-radius: 15px;
+    margin-top: 10rem;
+    font-size: 300%;
+}
+
+
+
+#gamescreen {
+    display: none;
+    text-align: center;
+}
+
+#superHard {
+     background-color: rgb(255, 51, 0);
+     margin-top:10rem;
+     font-size: 200%;
+     border-radius: 10px;
+}
+
+#backButton {  
+    background-color: rgb(255, 51, 0);  
+    font-size: 80%;
+    border-radius: 7px;
+}

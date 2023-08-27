@@ -1,0 +1,56 @@
+body {
+  --size: min(90vw, 90vh);
+  --black-background: rgb(207, 207, 207);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#chessboard {
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  width: var(--size);
+  height: var(--size);
+  margin: auto;
+
+  align-items: center;
+  font-size: calc(var(--size) / 8 - 20px);
+  text-align: center;
+}
+
+#chessboard .row {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  height: calc(var(--size) / 8);
+}
+
+#chessboard .cell {
+  border: 1px solid black;
+  background-color: #fff;
+}
+
+#chessboard div.row:nth-child(odd) div.cell:nth-child(even) {
+  background-color: var(--black-background);
+}
+
+#chessboard div.row:nth-child(even) div.cell:nth-child(odd) {
+  background-color: var(--black-background);
+}
+
+#chessboard div.cell.allowed {
+  border: 1px solid yellow;
+}
+
+#chessboard div.cell.over {
+  border: 1px solid blue;
+}
+
+#chessboard div.cell .piece{
+  background: transparent;
+  cursor: not-allowed;
+}
+
+#chessboard div.cell .piece[draggable=true] {
+  cursor: move;
+}

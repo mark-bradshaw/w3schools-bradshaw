@@ -1,0 +1,27 @@
+<head>
+    <title>Number Guesser</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div id="introscreen">
+        <h1>Number Guesser</h1>
+
+        <p>This is a number guessing game. I will display a number in binary form. You will guess the decimal value.</p>
+        <button id="startButton" onclick="startGame()">Start</button>
+        <button id="superHard" onclick="startHardGame()">hard:o</button>
+    </div>
+
+    <div id="gamescreen">
+        <h1>Number Guesser</h1>
+
+        <p id="question"></p>
+        <input type="text" id="guess" onkeyup="noWords()" />
+        <button onclick="checkGuess()">Submit Guess</button>
+
+        <h1 id="response"></h1>
+        <button id="backButton"onclick="showIntro()">back</button>
+    </div>
+</body>
+
+<script src="game.js"></script>

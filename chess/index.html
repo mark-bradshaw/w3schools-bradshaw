@@ -1,0 +1,103 @@
+<html>
+
+  <head>
+    <link href="game.css" rel="stylesheet" type="text/css">
+  </head>
+
+  <body>
+    <div id="turn">Turn: White</div>
+    <div id="chessboard">
+      <div id="row-8" class="row">
+        <div id="a8" class="cell"><span id="bkr" class="piece rook black">&#9820;</span></div>
+        <div id="b8" class="cell"><span id="bkn" class="piece knight black">&#9822;</span></div>
+        <div id="c8" class="cell"><span id="bkb" class="piece bishop black">&#9821;</span></div>
+        <div id="d8" class="cell"><span id="bq" class="piece queen black">&#9819;</span></div>
+        <div id="e8" class="cell"><span id="bk" class="piece king black">&#9818;</span></div>
+        <div id="f8" class="cell"><span id="bqb" class="piece bishop black">&#9821;</span></div>
+        <div id="g8" class="cell"><span id="bqn" class="piece knight black">&#9822;</span></div>
+        <div id="h8" class="cell"><span id="bqr" class="piece rook black">&#9820;</span></div>
+      </div>
+
+      <div id="row-7" class="row">
+        <div id="a7" class="cell"><span id="bpa" class="piece pawn black">&#9823;</span></div>
+        <div id="b7" class="cell"><span id="bpb" class="piece pawn black">&#9823;</span></div>
+        <div id="c7" class="cell"><span id="bpc" class="piece pawn black">&#9823;</span></div>
+        <div id="d7" class="cell"><span id="bpd" class="piece pawn black">&#9823;</span></div>
+        <div id="e7" class="cell"><span id="bpe" class="piece pawn black">&#9823;</span></div>
+        <div id="f7" class="cell"><span id="bpf" class="piece pawn black">&#9823;</span></div>
+        <div id="g7" class="cell"><span id="bpg" class="piece pawn black">&#9823;</span></div>
+        <div id="h7" class="cell"><span id="bph" class="piece pawn black">&#9823;</span></div>
+      </div>
+
+      <div id="row-6" class="row">
+        <div id="a6" class="cell"></div>
+        <div id="b6" class="cell"></div>
+        <div id="c6" class="cell"></div>
+        <div id="d6" class="cell"></div>
+        <div id="e6" class="cell"></div>
+        <div id="f6" class="cell"></div>
+        <div id="g6" class="cell"></div>
+        <div id="h6" class="cell"></div>
+      </div>
+
+      <div id="row-5" class="row">
+        <div id="a5" class="cell"></div>
+        <div id="b5" class="cell"></div>
+        <div id="c5" class="cell"></div>
+        <div id="d5" class="cell"></div>
+        <div id="e5" class="cell"></div>
+        <div id="f5" class="cell"></div>
+        <div id="g5" class="cell"></div>
+        <div id="h5" class="cell"></div>
+      </div>
+
+      <div id="row-4" class="row">
+        <div id="a4" class="cell"></div>
+        <div id="b4" class="cell"></div>
+        <div id="c4" class="cell"></div>
+        <div id="d4" class="cell"></div>
+        <div id="e4" class="cell"></div>
+        <div id="f4" class="cell"></div>
+        <div id="g4" class="cell"></div>
+        <div id="h4" class="cell"></div>
+      </div>
+
+      <div id="row-3" class="row">
+        <div id="a3" class="cell"></div>
+        <div id="b3" class="cell"></div>
+        <div id="c3" class="cell"></div>
+        <div id="d3" class="cell"></div>
+        <div id="e3" class="cell"></div>
+        <div id="f3" class="cell"></div>
+        <div id="g3" class="cell"></div>
+        <div id="h3" class="cell"></div>
+      </div>
+
+      <div id="row-2" class="row">
+        <div id="a2" class="cell"><span id="wpa" class="piece pawn white" draggable="true">&#9817;</span></div>
+        <div id="b2" class="cell"><span id="wpb" class="piece pawn white" draggable="true">&#9817;</span></div>
+        <div id="c2" class="cell"><span id="wpc" class="piece pawn white" draggable="true">&#9817;</span></div>
+        <div id="d2" class="cell"><span id="wpd" class="piece pawn white" draggable="true">&#9817;</span></div>
+        <div id="e2" class="cell"><span id="wpe" class="piece pawn white" draggable="true">&#9817;</span></div>
+        <div id="f2" class="cell"><span id="wpf" class="piece pawn white" draggable="true">&#9817;</span></div>
+        <div id="g2" class="cell"><span id="wpg" class="piece pawn white" draggable="true">&#9817;</span></div>
+        <div id="h2" class="cell"><span id="wph" class="piece pawn white" draggable="true">&#9817;</span></div>
+      </div>
+
+      <div id="row-1" class="row">
+        <div id="a1" class="cell"><span id="wkr" class="piece rook white" draggable="true">&#9814;</span></div>
+        <div id="b1" class="cell"><span id="wkn" class="piece knight white" draggable="true">&#9816;</span></div>
+        <div id="c1" class="cell"><span id="wkb" class="piece bishop white" draggable="true">&#9815;</span></div>
+        <div id="d1" class="cell"><span id="wq" class="piece queen white" draggable="true">&#9813;</span></div>
+        <div id="e1" class="cell"><span id="wk" class="piece king white" draggable="true">&#9812;</span></div>
+        <div id="f1" class="cell"><span id="wqb" class="piece bishop white" draggable="true">&#9815;</span></div>
+        <div id="g1" class="cell"><span id="wqn" class="piece knight white" draggable="true">&#9816;</span></div>
+        <div id="h1" class="cell"><span id="wqr" class="piece rook white" draggable="true">&#9814;</span></div>
+      </div>
+    </div>
+
+    <script src="chess.js" type="module"></script>
+    <script src="game.js" type="module"></script>
+  </body>
+
+</html>
